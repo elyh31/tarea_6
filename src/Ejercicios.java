@@ -8,10 +8,12 @@ public class Ejercicios {
 	//ejercicio1(1)=1
 	static int ejercicio1(int n)
 	{
+	// este es el caso base
 		if (n==0)
 		return 0; 
 		if (n==1)
 			return 1;
+	//este es la recursiva
 		return ejercicio1(n-1)+ejercicio1(n-2); 
 	}
 	
@@ -23,10 +25,12 @@ public class Ejercicios {
 	//ejercicio2(1)=3
 	static int ejercicio2(int n)
 	{
+	// este es el caso base
 		if (n==0)
 			return 2; 
 		if (n==1)
 			return 3;
+	//este es la recursiva
 		return ejercicio2(n-1)-ejercicio2(n-2); 
 	}
 	
@@ -38,12 +42,14 @@ public class Ejercicios {
 	//ejercicio3(2)=2
 	static int ejercicio3(int n)
 	{
+	// este es el caso base
 		if (n==0)
 			return 0; 
 		if (n==1)
 			return 1;
 		if (n==2)
 			return 2;
+	//este es la recursiva
 		return ejercicio3(n-1)*ejercicio3(n-2)-ejercicio3(n-2)+12;  
 	}
 	
